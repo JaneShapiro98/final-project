@@ -79,7 +79,7 @@ nav {
 .logo {
 	width: auto;
 	height: 90%;
-	padding: 1rem;
+	padding-top: 10px;
 }
 
 
@@ -252,3 +252,10 @@ footer {
 .year {
 	color: #f9f5dc;
 }
+
+
+.menu {
+  display: none;
+}
+
+
