@@ -29,7 +29,7 @@ h3 {
 h4 {
 	font-family: 'Cormorant', serif;
 	color: #111642;
-	text-decoration: none;
+	font-weight: bold;
 	font-size: 20px;
 }
 
@@ -83,7 +83,7 @@ nav {
 }
 
 
-.hamburger {
+.hamburger, #hamburger-open {
 	width: auto;
 	height: 60%;
 	padding: 1rem;
@@ -99,18 +99,44 @@ nav {
 }
 
 /*mobile menu*/
-.mobile-menu {
-  background-color: white;
+#menu {
   box-shadow: 0 0 2rem rgba(0,0,0,.1); 
   display: none;
-  padding: 15px;
   position: absolute;
-  top: 60px;
-  width: 250px;
+  width: auto;
   z-index: 10;
+  text-align: right;
+  list-style: none;
+  right: 0px;
+  top: 80px;
+  animation: rightslide 1s;
+}
+
+.mobile-about {
+	list-style: none;
+	background-color: #ef9635;
+	padding: 20px;
+	animation: rightslide 1s;
+}
+
+.mobile-class {
+	list-style: none;
+	background-color: #363fd8;
+	padding: 20px;
+}
+
+.mobile-contact {
+	list-style: none;
+	background-color: #2d4c0d;
+	padding: 20px;
 }
 
 
+@keyframes rightslide {
+0%   { opacity: 0; }
+  100% { opacity: 1; }
+  
+}
 /*desktop navigation*/
 @media (min-width: 768px) {
 
@@ -160,13 +186,15 @@ nav {
 }
 
 .hero-container {
-	background-color: gray;
+	background-image: url("img/hero.jpg");
+	background-size: cover;
+	background-position: center;
 	display: grid;
 	grid-template-rows: 5rem 5rem 5rem;
 	padding-left: 1rem;
 	padding-right: 1rem;
 	height: 400px;
-	width: auto;%;
+	width: auto;
 }
 
 .topic-rows, .topic-icons, .icons, .topic-copy, .copy {
@@ -180,17 +208,45 @@ nav {
 }
 
 .column-list-1, .column-list-2, .column-list-3 {
- background-color: pink;
  list-style: none;
  padding: .5rem;
 }
 
-.three, .two, .one {
-	background-color: purple;
+.one {
+	background-image: url("img/one.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #ef9635;
 	height: 175px;
 	width: auto;
 	text-align: center;
 	padding: .5rem;
+}
+
+.two {
+	background-image: url("img/two.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #ef9635;
+	height: 175px;
+	width: auto;
+	text-align: center;
+	padding: .5rem;
+}
+
+.three {
+	background-image: url("img/three.jpg");
+	background-size: cover;
+	background-position: center top;
+	color: #ef9635;
+	height: 175px;
+	width: auto;
+	text-align: center;
+	padding: .5rem;
+}
+
+h4 {
+	color: white;
 }
 
 }
@@ -208,7 +264,9 @@ a {
 
 
 .hero-container {
-	background-color: gray;
+	background-image: url("img/hero.jpg");
+	background-size: cover;
+	background-position: center;
 	display: grid;
 	grid-template-rows: 5rem 5rem 5rem;
 	padding-left: 1rem;
@@ -254,7 +312,7 @@ footer {
 }
 
 
-.menu {
+#menu {
   display: none;
 }
 

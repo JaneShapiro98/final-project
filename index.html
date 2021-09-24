@@ -1,4 +1,4 @@
-<!doctype html>
+<!doctype HTML>
 <html class="no-js" lang="en">
 <head>
   <meta charset="utf-8">
@@ -13,15 +13,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="main.css">
+<!--   <script defer src="js/main.js"></script> -->
 </head>
 <body>
-  <aside class="menu">
-     <img class="hamburger" src="img/hamburger.png" alt="menu"> 
+  <aside id="menu">
      <ul class="mobile-list">
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Say Hello</a></li>
-          <li><a href="#">Class Library</a></li>
+          <li class="mobile-about"><a href="#">About Me</a></li>
+          <li class="mobile-contact"><a href="#">Say Hello</a></li>
+          <li class="mobile-class"><a href="#">Class Library</a></li>
         </ul>
   </aside>
   <nav>
@@ -29,7 +29,7 @@
        <a href="index.html" class="logo"><img class="logo" src="img/logo.png" alt="logo"></a>
       </div>
       <div class="nav-right">
-        <img class="hamburger" src="img/hamburger.png" alt="menu">
+        <img id="hamburger-open" class="hamburger" src="img/hamburger.png" alt="menu">
       </div>
       <div class="nav-right-desktop">
         <ul class="desktop-list">
@@ -88,6 +88,6 @@
     <p class="year">©2021</p>
   </footer>
   </main>
-  <script src="js/main.js"></script>
+  <script defer src="js/main.js"></script>
 </body>
 </html>
