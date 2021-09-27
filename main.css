@@ -12,18 +12,38 @@ h2 {
 	font-size: 18px;
 }
 
+.cta {
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	color: #f9f5dc;
+	text-decoration: none;
+	font-size: 14px;
+	background-color: #363fd8;
+	border-radius: 30px;
+	width: 100px;
+	align-items: center;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+}
+
+
 h3 {
 	font-family: 'Montserrat', sans-serif;
 	color: #f9f5dc;
 	text-decoration: none;
 	font-size: 14px;
-	line-height: 30px;
 	background-color: #363fd8;
 	border-radius: 30px;
-	width: 100px;
-	height: 30px;
-	text-align: center;
-	vertical-align: center;
+}
+
+
+.cta:hover {
+	background-color: #ef9635;
+}
+
+.hero-cta {
+	max-height: 40px;
 }
 
 h4 {
@@ -31,6 +51,7 @@ h4 {
 	color: #111642;
 	font-weight: bold;
 	font-size: 20px;
+	line-height: 20px;
 }
 
 p {
@@ -79,7 +100,7 @@ nav {
 .logo {
 	width: auto;
 	height: 90%;
-	padding-top: 10px;
+	margin-top: 2px;
 }
 
 
@@ -87,7 +108,12 @@ nav {
 	width: auto;
 	height: 60%;
 	padding: 1rem;
+	cursor: pointer;
 
+}
+
+.hamburger:hover {
+	cursor: pointer;
 }
 
 .nav-right-desktop {
@@ -140,6 +166,9 @@ nav {
 /*desktop navigation*/
 @media (min-width: 768px) {
 
+#menu {
+  display: none;
+}
 
  .hamburger {
 	display: none;
@@ -185,16 +214,23 @@ nav {
   	overflow: hidden;
 }
 
+.desktop-list-item:hover {
+	text-decoration: underline #ef9635 2px;
+
+}
+
+
 .hero-container {
 	background-image: url("img/hero.jpg");
 	background-size: cover;
 	background-position: center;
 	display: grid;
-	grid-template-rows: 5rem 5rem 5rem;
+	grid-template-rows: 1fr 1fr 1fr;
 	padding-left: 1rem;
 	padding-right: 1rem;
 	height: 400px;
 	width: auto;
+	text-align: left;
 }
 
 .topic-rows, .topic-icons, .icons, .topic-copy, .copy {
@@ -204,12 +240,24 @@ nav {
 .topic-columns {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	margin: 1rem;
+	margin: .1rem;
+	justify-content: center;
+	align-items: baseline;
 }
+
 
 .column-list-1, .column-list-2, .column-list-3 {
  list-style: none;
  padding: .5rem;
+ line-height: 18px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ text-align: center;
+}
+
+#cta-lm {
+	align-self: center;
 }
 
 .one {
@@ -217,7 +265,7 @@ nav {
 	background-size: cover;
 	background-position: center;
 	color: #ef9635;
-	height: 175px;
+	height: 250px;
 	width: auto;
 	text-align: center;
 	padding: .5rem;
@@ -228,7 +276,7 @@ nav {
 	background-size: cover;
 	background-position: center;
 	color: #ef9635;
-	height: 175px;
+	height: 250px;
 	width: auto;
 	text-align: center;
 	padding: .5rem;
@@ -239,7 +287,43 @@ nav {
 	background-size: cover;
 	background-position: center top;
 	color: #ef9635;
-	height: 175px;
+	height: 250px;
+	width: auto;
+	text-align: center;
+	padding: .5rem;
+}
+
+.one:hover {
+	/*background-color: #363fd8;*/
+	background-image: linear-gradient(#2d4c0d, #363fd8, #ef9635);
+	background-size: cover;
+	background-position: center top;
+	color: #ef9635;
+	height: 250px;
+	width: auto;
+	text-align: center;
+	padding: .5rem;
+}
+
+.two:hover {
+	/*background-color: #363fd8;*/
+	background-image: linear-gradient(#2d4c0d, #363fd8, #ef9635);
+	background-size: cover;
+	background-position: center top;
+	color: #ef9635;
+	height: 250px;
+	width: auto;
+	text-align: center;
+	padding: .5rem;
+}
+
+.three:hover {
+	/*background-color: #363fd8;*/
+	background-image: linear-gradient(#2d4c0d, #363fd8, #ef9635);
+	background-size: cover;
+	background-position: center top;
+	color: #ef9635;
+	height: 250px;
 	width: auto;
 	text-align: center;
 	padding: .5rem;
@@ -275,15 +359,22 @@ a {
 
 .topic-rows {
 	display: grid;
-	grid-template-columns: .25fr .75fr;
-	margin: 1rem;
+	grid-template-columns: .2fr .8fr;
+	justify-content: flex-start;
+	height: auto;
 
+}
+
+.icons{
+	display: grid;
+	grid-template-rows: 1fr, 1fr, 1fr;
+	grid-row-gap: 80px;
+	padding-top: 30px;
 }
 
 .icon-img {
 	width: 60px;
 	height: auto;
-	padding-top: 25px;
 }
 
 .copy, .icons {
@@ -293,18 +384,28 @@ a {
 footer {
 	height: auto;
 	width: 100%;
-	text-align: center;
+	text-align: left;
 	background-color: #2d4c0d; 
 	font-family: 'Montserrat', sans-serif;
 	color: #f9f5dc;
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 15px;
 	display: inline-block;
+	line-height: 30px;
+	padding-bottom: -10px !important;
+	padding-left: 20px;
 }
 
 .social {
-	width: 20px;
-	height: auto;
+	width: 15px !important; 
+	height: auto !important;
+    margin-left: -25px !important;
+    padding-top: -10px !important;
+}
+
+.social:hover {
+	background-color: #363fd8;
+	border-radius: 5px;
 }
 
 .year {
@@ -316,4 +417,76 @@ footer {
   display: none;
 }
 
+/*about page CSS*/
+/*.about-hero-container {
+	background-image: url("img/about-hero.jpg");
+	background-size: cover;
+	background-position: center;
+	display: grid;
+	grid-template-rows: 5rem 5rem 5rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	height: 400px;
+	width: auto;
+}*/
+
+/*contact page CSS*/
+/*.contact-hero-container {
+	background-image: url("img/contact-hero.jpg");
+	background-size: cover;
+	background-position: center;
+	display: grid;
+	grid-template-rows: 5rem 5rem 5rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	height: 400px;
+	width: auto;
+}
+
+.contact-topic-column {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin: .5rem;
+	justify-content: flex-start;
+	color: #f9f5dc !important;
+}
+
+
+.contact-column-list-1 {
+background-color: #ef9635;
+color: #f9f5dc !important;
+ list-style: none;
+ padding: .5rem;
+ line-height: 18px;
+}
+
+.contact-column-list-2 {
+background-color: #2d4c0d;
+color: #f9f5dc !important;
+ list-style: none;
+ padding: .5rem;
+ line-height: 18px;
+}
+
+
+.contact-column-list-3 {
+background-color: #111642;
+color: #f9f5dc !important;
+ list-style: none;
+ padding: .5rem;
+ line-height: 18px;
+}*/
+
+/*library page CSS*/
+.library-hero-container {
+	background-image: url("img/library-hero.jpg");
+	background-size: cover;
+	background-position: center;
+	display: grid;
+	grid-template-rows: 5rem 5rem 5rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	height: 400px;
+	width: auto;
+}
 

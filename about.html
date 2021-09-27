@@ -1,10 +1,9 @@
-<!doctype html>
+<!doctype HTML>
 <html class="no-js" lang="en">
-
 <head>
   <meta charset="utf-8">
-  <title>TITLE OF SITE</title>
-  <meta name="description" content="MY SITE">
+  <title>MY SITE HOMEPAGE</title>
+  <meta name="description" content="SITE">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="main.css">
   <link href="https://fonts.googleapis.com">
@@ -14,142 +13,53 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="about.css">
 </head>
 <body>
-  <aside class="menu">
-<!--      <ul class="mobile-list">
-          <li class="menu-close"><a href="#">Close</a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Say Hello</a></li>
-          <li><a href="#">Class Library</a></li>
-        </ul> -->
+  <aside id="menu">
+     <ul class="mobile-list">
+          <li class="mobile-about"><a href="about.html">About</a></li>
+          <li class="mobile-contact"><a href="contact.html">Contact</a></li>
+          <li class="mobile-class"><a href="library.html">Library + Resources</a></li>
+        </ul>
   </aside>
   <nav>
       <div class="nav-left">
-        <a href="index.html" class="logo"><img class="logo" src="img/logo.png" alt="logo"></a>
+       <a href="index.html" class="logo"><img class="logo" src="img/logo.png" alt="logo"></a>
       </div>
       <div class="nav-right">
-        <img class="hamburger" src="img/hamburger.png" alt="menu">
+        <img id="hamburger-open" class="hamburger" src="img/hamburger.png" alt="menu">
       </div>
       <div class="nav-right-desktop">
         <ul class="desktop-list">
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="#">Say Hello</a></li>
-          <li><a href="#">Class Library</a></li>
+          <li class="desktop-list-item"><a href="about.html">About</a></li>
+          <li class="desktop-list-item"><a href="contact.html">Contact</a></li>
+          <li class="desktop-list-item"><a href="library.html">Library + Resources</a></li>
         </ul>
       </div>
   </nav>
-  <section class="hero-container">
-      <h1>Heading One</h1>
-      <h2>H2 subheading here</h2>
-      <h3>Join</h3>
+  <section class="about-hero-container">
+      <h1>About</h1>
+      <h2>Who, what and where?</h2>
   </section>
-<!--Section: Contact v.2-->
-<section class="mb-4">
-
-    <!--Section heading-->
-    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
-    <!--Section description-->
-    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
-        a matter of hours to help you.</p>
-
-    <div class="row">
-
-        <!--Grid column-->
-        <div class="col-md-9 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="name" name="name" class="form-control">
-                            <label for="name" class="">Your name</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="email" name="email" class="form-control">
-                            <label for="email" class="">Your email</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="md-form mb-0">
-                            <input type="text" id="subject" name="subject" class="form-control">
-                            <label for="subject" class="">Subject</label>
-                        </div>
-                    </div>
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-12">
-
-                        <div class="md-form">
-                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                            <label for="message">Your message</label>
-                        </div>
-
-                    </div>
-                </div>
-                <!--Grid row-->
-
-            </form>
-
-            <div class="text-center text-md-left">
-                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
-            </div>
-            <div class="status"></div>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-md-3 text-center">
-            <ul class="list-unstyled mb-0">
-                <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                    <p>San Francisco, CA 94126, USA</p>
-                </li>
-
-                <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                    <p>+ 01 234 567 89</p>
-                </li>
-
-                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                    <p>contact@mdbootstrap.com</p>
-                </li>
-            </ul>
-        </div>
-        <!--Grid column-->
-
-    </div>
-<form action="Jane.c.shapiro@gmail.com" method="post" enctype="text/plain" >
-FirstName:<input type="text" name="FirstName">
-Email:<input type="text" name="Email">
-<input type="submit" name="submit" value="Submit">
-</form>
-</section>
-<!--Section: Contact v.2-->
+  <section class="about-container">
+      <ul class="about-body">
+      <li><img class="bio" src="img/bio.jpg" alt="headshot"></li>
+      <li><img class="bio" src="img/yoga.jpg" alt="headshot"></li>
+      <li><img class="bio" src="img/trips.jpg" alt="headshot"></li>
+      <li><h4> About Jane —</h4>
+      <p>Certified yoga instructor (200 hr YTT) by Mind Body Soul studio in NYC</p></li>
+      <li><h4> Our Yoga —</h4>
+      <p>Hatha/Vinyasa style classes with guided meditation</p></li>
+      <li><h4> Our Trips —</h4>
+      <p>Day hikes, backpacking, biking and yoga retreats outside of NYC.</p></li>
+    </ul>
+  </section>
   <footer>
-    <h5>Let's connect <a href=#><img class="social" src="img/social-logo.png" alt="instagram logo"></a></h5>
+    <h5>Let's connect<a href=https://instagram.com/jane.c.shapiro/?hl=en><img class="social" src="img/social-logo.png" alt="instagram logo"></a></h5>
     <p class="year">©2021</p>
   </footer>
   </main>
-  <script src="js/main.js"></script>
+  <script defer src="js/main.js"></script>
 </body>
 </html>
